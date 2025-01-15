@@ -1,67 +1,72 @@
-<p align="center"><img width="800px" src="https://i.ibb.co/fdDRkWb/Frame.jpg"></p>
-<p align="center">
-<a href="https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme#review-details"><img src="https://img.shields.io/badge/marketplace-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
-</p>
+# Catatan
 
-## Brought to you by
+### 1. Kemas Ekstensi yang sudah dibuat
 
-<p><a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=equin_material_icons&amp;utm_medium=banner"><img src="https://alt-images.codestream.com/codestream_logo_equin_material_icons.png"></a></br>
-Manage pull requests and conduct code reviews in your IDE with full source-tree context. Comment on any line, not just the diffs. Use jump-to-definition, your favorite keybindings, and code intelligence with more of your workflow.<br> <a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=equin_material_icons&amp;utm_medium=banner">Learn More</a></p>
+Jalankan perintah berikut untuk melakukan buid
 
----
-## Table of contents
-
-The most epic file icon theme for Visual Studio Code. This icon theme is made to be used with [Material Theme for Vscode](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme#review-details) for an immersive experience.
-
-- [Getting started](#getting-started)
-  - [Installation](#installation)
-  - [Activate theme](#activate-theme)
-  - [Fix File Icons](#fix-file-icons)
-
-# Getting started
-
-You can install this awesome icon pack through the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons).
-
-## Installation
-
-Launch *Quick Open*:
-  - <img src="https://www.kernel.org/theme/images/logos/favicon.png" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf">Linux</a> `Ctrl+P`
-  - <img src="https://developer.apple.com/favicon.ico" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">macOS</a> `⌘P`
-  - <img src="https://www.microsoft.com/favicon.ico" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Windows</a> `Ctrl+P`
-
-Paste the following command and press `Enter`:
-
-```shell
-ext install material theme icons
+```bash
+vsce package
 ```
 
-And pick the one by **Mattia Astorino** (me) as author.
+Jika sukses, Anda akan mendapatkan file .vsix di root proyek Anda, misalnya `my-icon-theme-0.1.0.vsix`.
 
+### 2. Install Ekstensi di VS Code Biasa
 
-## Activate theme
+Berikut langkan untuk install icon:
 
-Launch *Quick Open*:
+- Buka VS Code.
+- Tekan Ctrl+Shift+P (Windows/Linux) atau Cmd+Shift+P (macOS) untuk membuka Command Palette.
+- Ketik dan pilih Extensions: Install from VSIX....
+- Pilih file `.vsix` yang telah Anda buat.
+- Setelah terinstal, Anda dapat memilih tema ikon Anda di:
 
-  - <img src="https://www.kernel.org/theme/images/logos/favicon.png" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf">Linux</a> `Ctrl + Shift + P`
-  - <img src="https://developer.apple.com/favicon.ico" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">macOS</a> `⌘ + Shift + P`
-  - <img src="https://www.microsoft.com/favicon.ico" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Windows</a> `Ctrl + Shift + P`
+```bash
+File > Preferences > File Icon Theme > My Icon Theme
+```
 
-Type `icon theme`, choose `Preferences: File Icon Theme`, and select one of the Material Theme Icons variants from the list. After activation, the icons will appear in your explorer sidebar.
+### 3. Update Ekstensi (Jika Diperlukan)
 
-## Fix File Icons
+Jika Anda melakukan perubahan pada tema ikon:
 
-If you notice that the folder icons do not match the active Material Theme variant, you can fix it with just a command.
+- Perbarui versi di `package.json` (contoh, dari 0.1.0 ke 0.1.1).
+- Ulangi langkah untuk membuat paket `.vsix` dan instal ulang.
 
-Launch *Quick Open*:
+### 6. Opsional: Publikasikan ke Marketplace
 
-  - <img src="https://www.kernel.org/theme/images/logos/favicon.png" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf">Linux</a> `Ctrl + Shift + P`
-  - <img src="https://developer.apple.com/favicon.ico" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">macOS</a> `⌘ + Shift + P`
-  - <img src="https://www.microsoft.com/favicon.ico" width=16 height=16/> <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Windows</a> `Ctrl + Shift + P`
+Jika Anda ingin membagikan tema ikon Anda kepada orang lain:
 
-Type `material theme icons` and select `Material Theme Icons: Fix icons accent. Based on Material Theme` from the drop-down menu. This command will set the correct icon theme based on your active Material Theme variant (if present).
+- Daftar akun di [Azure DevOps](https://dev.azure.com/) untuk mendapatkan personal access token (PAT).
+- Login ke VSCE dengan token:
+  ```bash
+  vsce login <your-publisher-name>
+  ```
+- Publikasikan ekstensi Anda:
+  ```bash
+  vsce publish
+  ```
 
----
+Sample fileIcons.json
 
-<p align="center"> <img src="https://equinusocio.gallerycdn.vsassets.io/extensions/equinusocio/vsc-material-theme/2.6.3/1545853656074/Microsoft.VisualStudio.Services.Icons.Default" width=16 height=16/> Copyright &copy; 2019 Mattia Astorino & Alessio Occhipinti</p>
-
-<p align="center"><a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-5E81AC.svg?style=flat-square"/></a></p>
+```json
+{
+	"iconDefinitions": {
+		"javascript": {
+		"iconPath": "./icons/javascript.svg"
+		},
+		"python": {
+		"iconPath": "./icons/python.svg"
+		}
+	},
+	"fileExtensions": {
+		"js": "javascript",
+		"py": "python"
+	},
+	"fileNames": {
+		"package.json": "javascript"
+	},
+	"languageIds": {
+		"javascript": "javascript",
+		"python": "python"
+	}
+}
+```
