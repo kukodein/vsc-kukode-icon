@@ -49,12 +49,12 @@ Sample fileIcons.json
 
 ```json
 {
-	"iconDefinitions": {
-		"javascript": {
-		"iconPath": "./icons/javascript.svg"
+    "iconDefinitions": {
+	    "javascript": {
+		    "iconPath": "./icons/javascript.svg"
 		},
 		"python": {
-		"iconPath": "./icons/python.svg"
+		    "iconPath": "./icons/python.svg"
 		}
 	},
 	"fileExtensions": {
