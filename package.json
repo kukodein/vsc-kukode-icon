@@ -2,13 +2,12 @@
 	"name": "vsc-kukode-icon",
 	"displayName": "Kukode VSCode Icon Theme",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Custom file and folder icon theme for VS Code by Kukode",
 	"categories": ["Themes"],
 	"keywords": ["Material", "Icons", "Theme"],
 	"author": "kukode",
 	"publisher": "kukode",
 	"license": "ISC",
-	"main": "index.js",
 	"contributes": {
 	  "iconThemes": [
 		{

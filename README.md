@@ -1,6 +1,17 @@
 # Catatan
 
-### 1. Kemas Ekstensi yang sudah dibuat
+### 1. Build dan Jalankan Sementara
+
+Buka VS Code dan jalankan:
+
+```bash
+code --extensionDevelopmentPath=path/to/vscode-icon-theme
+```
+
+Pilih tema ikon Anda di `File > Preferences > File Icon Theme.`
+
+
+### 2. Kemas Ekstensi yang sudah dibuat
 
 Jalankan perintah berikut untuk melakukan buid
 
