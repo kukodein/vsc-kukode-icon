@@ -535,6 +535,15 @@
 		"zip": {
 			"iconPath": "./icons/zip.svg"
 		},
+		"dark": {
+			"iconPath": "./icons/file_dark.svg"
+		},
+		"file": {
+			"iconPath": "./icons/file_dark.svg"
+		},
+		"file_dark": {
+			"iconPath": "./icons/file_dark.svg"
+		},
 		"_file_actionscript": {
 			"iconPath": "./icons/actionscript.svg"
 		},
