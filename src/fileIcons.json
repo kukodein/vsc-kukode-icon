@@ -536,13 +536,16 @@
 			"iconPath": "./icons/zip.svg"
 		},
 		"dark": {
-			"iconPath": "./icons/file_dark.svg"
+			"iconPath": "./icons/unknown.svg"
 		},
 		"file": {
-			"iconPath": "./icons/file_dark.svg"
+			"iconPath": "./icons/unknown.svg"
+		},
+		"_file_dark": {
+			"iconPath": "./icons/unknown.svg"
 		},
 		"file_dark": {
-			"iconPath": "./icons/file_dark.svg"
+			"iconPath": "./icons/unknown.svg"
 		},
 		"_file_actionscript": {
 			"iconPath": "./icons/actionscript.svg"
@@ -1191,6 +1194,9 @@
 		},
 		"_file_zip": {
 			"iconPath": "./icons/zip.svg"
+		},
+		"_file_database": {
+			"iconPath": "./icons/sql.svg"
 		}
 	},
 	"file": "_file_dark",
