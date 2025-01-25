@@ -21,7 +21,7 @@ vsce package
 
 Jika sukses, Anda akan mendapatkan file .vsix di root proyek Anda, misalnya `my-icon-theme-0.1.0.vsix`.
 
-### 2. Install Ekstensi di VS Code Biasa
+### 3. Install Ekstensi di VS Code Biasa
 
 Berikut langkan untuk install icon:
 
@@ -35,14 +35,14 @@ Berikut langkan untuk install icon:
 File > Preferences > File Icon Theme > My Icon Theme
 ```
 
-### 3. Update Ekstensi (Jika Diperlukan)
+### 4. Update Ekstensi (Jika Diperlukan)
 
 Jika Anda melakukan perubahan pada tema ikon:
 
 - Perbarui versi di `package.json` (contoh, dari 0.1.0 ke 0.1.1).
 - Ulangi langkah untuk membuat paket `.vsix` dan instal ulang.
 
-### 6. Opsional: Publikasikan ke Marketplace
+### 5. Opsional: Publikasikan ke Marketplace
 
 Jika Anda ingin membagikan tema ikon Anda kepada orang lain:
 
@@ -55,6 +55,8 @@ Jika Anda ingin membagikan tema ikon Anda kepada orang lain:
   ```bash
   vsce publish
   ```
+
+### 6. Sample JSON File
 
 Sample fileIcons.json
 
