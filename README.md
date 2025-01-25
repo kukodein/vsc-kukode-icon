@@ -1,4 +1,8 @@
-# Catatan
+# Kukode VSCode Icon Theme
+
+Screenshot
+
+![sample icon](./image.png)
 
 ### 1. Build dan Jalankan Sementara
 
