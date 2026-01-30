@@ -4,6 +4,29 @@ Screenshot
 
 ![sample icon](./image.png)
 
+Langkah-langkah install Icon Theme
+
+- Download file `.vsix` di [Resource Git Repo](/releases)
+- Buka VS Code.
+- Tekan Ctrl+Shift+P (Windows/Linux) atau Cmd+Shift+P (macOS) untuk membuka Command Palette.
+- Ketik dan pilih Extensions: Install from VSIX....
+- Pilih file `.vsix` yang telah didownload.
+- Setelah terinstal, Anda dapat memilih tema ikon Anda di:
+
+```bash
+File > Preferences > File Icon Theme > Kukode Icon Theme
+```
+
+**Optional**
+
+<img width="1072" height="697" alt="image" src="https://github.com/user-attachments/assets/a7048660-195f-44ce-b77f-f9d6b85c8e6b" />
+
+
+
+---
+
+## Pembuatan VSCode Extension Baru
+
 ### 1. Build dan Jalankan Sementara
 
 Buka VS Code dan jalankan:
