@@ -6,7 +6,7 @@ Screenshot
 
 Langkah-langkah install Icon Theme
 
-- Download file `.vsix` di [Resource Git Repo](/releases)
+- Download file `.vsix` di [Resource Git Repo](https://github.com/kukodein/vsc-kukode-icon/releases)
 - Buka VS Code.
 - Tekan Ctrl+Shift+P (Windows/Linux) atau Cmd+Shift+P (macOS) untuk membuka Command Palette.
 - Ketik dan pilih Extensions: Install from VSIX....
